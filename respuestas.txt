@@ -11,3 +11,25 @@
 El interprete interactivo devuelve un valor nil ( nulo) ademas de mostrar por pantalla el hola mundo y al ejecutar el interprete de ruby mediante fichero devuelve el hola mundo.
 
 
+¿Cuál es el resultado de cada una de las siguientes operaciones?
+[1] pry(main)> puts x
+10
+=> nil
+[2] pry(main)> def hello
+[2] pry(main)*   puts "Hello world"
+[2] pry(main)* end  
+=> nil
+[3] pry(main)> hello
+Hello world
+=> nil
+[4] pry(main)> byebye
+bye bye world!!!
+=> nil
+[5] pry(main)> x = "changed"
+=> "changed"
+[6] pry(main)> exit
+program resumes here. Value of x is: changed.
+
+¿Cuáles son las diferencias entre la ejecución del programa "Hola mundo" con el interprete interactivo y PRY?
+Al llamar al interprete un fichero te lo interpreta linea por linea mientras que el pry te genera un entorno interactivo donde puedes modificar el codigo durante la interpretacion
+
