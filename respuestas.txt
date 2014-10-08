@@ -1,0 +1,13 @@
+¿Cuál es el resultado de la siguiente operación?
+2.0.0p247 :001 > puts "Hello world"
+ Hello world
+ => nil
+2.0.0p247 :002 >
+
+
+
+¿Cuáles son las diferencias entre la ejecución del programa "Hola mundo con el interprete de  Ruby y el interprete interactivo anterior?
+
+El interprete interactivo devuelve un valor nil ( nulo) ademas de mostrar por pantalla el hola mundo y al ejecutar el interprete de ruby mediante fichero devuelve el hola mundo.
+
+
