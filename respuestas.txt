@@ -33,3 +33,152 @@ program resumes here. Value of x is: changed.
 ¿Cuáles son las diferencias entre la ejecución del programa "Hola mundo" con el interprete interactivo y PRY?
 Al llamar al interprete un fichero te lo interpreta linea por linea mientras que el pry te genera un entorno interactivo donde puedes modificar el codigo durante la interpretacion
 
+34-> la diferencia es que la primera congen los valores no imprimibles de \t\n que actuaran como un tabulador y un retorno de carro y la segunda coge los valores literales por tanto mostrara un \t\n
+
+
+35-> El %q actua como comillas simples la sentencia que tiene a su lado
+en el caso de %q{hello world\n} mostrara "hello world\n" y en la cadena %q{'a' 'b' 'c'}
+mostrara "'a' 'b' 'c'"
+
+36-> El %Q actua como comillas dobles con la sentencia que se introduce entre llaves a su lado
+en el %Q
+
+
+37-> c = "--4--\n--2--\n"
+
+38-> c = "--\#{a}--\n--\#{b}--\n"
+
+39-> 
+ a) "he"
+ b) "o"
+ c) "hello"
+
+
+40-> g = "helloworld"
+
+41-> e = "..."
+
+42-> a = "222"
+
+43-> es un metodo que te se para la cadena que le metes en multiples cadenas unas por cada palabra que la contenga.
+
+44-> un array de dos elementos "\\t" "\\n"
+
+45-> un array de dos elementso "\t" "\n"
+
+46-> [nil, nil, nil]
+
+47-> [0, 0, 0]
+
+48-> b = [[1,2], [3,4]]
+
+49-> c = [0, 2, 4]
+
+50-> 
+     a[1,1]    = ["b"]
+     a[-2,2]   = ["d" , "e"]
+     a[0..2]   = ["a", "b", "c"]
+     a[0...1]  = ["a"]
+     a[-2..-1] = ["d", "e"]
+   
+51->
+     1) a = ["A", "B", "c", "d", "e"]
+     2) a = ["A", "B", "C", "D", "E"]
+     3) a = [1, 2, 3, "A", "B", "C", "D", "E"]
+     4) a = [3, "A", "B", "C", "D", "E"]
+     5) a = [3, "A", "B", "C", "D", "Z"]
+     6) a = [3, "A", "B", "C", nil]
+    
+52-> 
+     1) a = [1, 2, 3]
+     2) a = [1, 2, 3, 4, 5]
+     3) a = [1, 2, 3, 4, 5, [6, 7, 8]]
+     4) a = 
+        TypeError: no implicit conversion of Fixnum into Array
+        from (irb):73:in `+'
+        from (irb):73
+        from /usr/local/rvm/rubies/ruby-2.0.0-p247/bin/irb:13:in `<main>'
+
+53->
+   x = ["a", "b", "c", "b", "a"]
+   x = ["a", "a"]
+
+54-> z = [0, 0, 0, 0, 0, 0, 0, 0]
+
+55->
+      a = [1]
+      a = [1, 2, 3]  
+      a = [1, 2, 3, [4, 5, 6]]
+      a = [1, 2, 3, [4, 5, 6], 7, 8]
+
+56-> 
+      c = [1, 2, 3, 4, 5]
+      d = [5, 4, 3, 2, 1]
+      e = [2, 3, 4]
+      f = [4, 3, 2]
+
+57-> 
+      a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+      b = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+      b = false
+      b = true
+      b = 1 3 5 7 9  => 1...10
+      1..3.to_a = ERROR
+
+58->
+     r = true
+     r = true
+     r = true
+
+59-> 
+    > true.class
+      => TrueClass
+    > false.class
+      => FalseClass
+    > puts "hello" if 0
+      hello
+      => nil
+    > puts "hello" if nil
+      => nil
+    > puts "hello" if ""
+      (irb):32: warning: string literal in condition
+      hello
+      => nil
+
+60->
+    x.class = symbol
+    x = false
+    x = true
+    z.class= symbol
+    x = true
+    x= false
+
+61->
+    t    = "Ruby"
+    t    = ""
+    s    = Rub => nil
+    t    = "Java"
+    s ,t = RubJava => nil
+
+62->"3 rubies"
+
+63->
+    x,y = [4,5]
+    z = 5
+    x,y,z = [1,2,3]
+
+64->
+    x.keys       = [:a,:b]
+    x.values     = [1,2]
+    x            = {:a=>1, :b=>2, :c=>3}
+    x            = {:a=>1, :b=>2, :c=>3}
+    x            = {:b=>2, :c=>3}
+    x. delete_if = {:a=>1}
+    x            = {:a=>1}
+
+65-> crea un espacio para claves hash, ninguna deferencia.
+
+66-> ["hello", "world", "hello", "LPP"]
+
+ 
+    
